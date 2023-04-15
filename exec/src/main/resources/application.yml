@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: exec
+  profiles:
+    active: pro
+    include:
+      - log
+logging:
+  log:
+    home: ./exec-log             # 日志文件保存位置
+    max-history-day: 30   # 日志文件保留天数

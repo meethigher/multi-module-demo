@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: app
+  profiles:
+    active: dev
+    include:
+      - log
+      - web
+logging:
+  log:
+    home: ./app-log             # 日志文件保存位置
+    max-history-day: 30   # 日志文件保留天数
